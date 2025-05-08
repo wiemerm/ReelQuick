@@ -19,11 +19,11 @@ struct MovieSearchView: View {
 
     var body: some View {
         VStack {
-            List(movies) {
-                MovieListItem(movie: $0)
+            List(movies) { movie in
+                MovieListItem(movie: movie)
                     .overlay {
                         NavigationLink {
-                            MovieDetailView()
+                            MovieDetailView(movie: movie)
                         } label: {
                             EmptyView()
                         }.opacity(0)
