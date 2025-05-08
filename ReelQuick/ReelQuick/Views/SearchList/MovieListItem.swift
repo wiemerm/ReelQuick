@@ -12,7 +12,7 @@ struct MovieListItem: View {
 
     var body: some View {
         HStack(alignment: .top) {
-            PosterImage(url: movie.posterImageURL)
+            PosterImage(url: movie.posterImageURL, movieTitle: movie.title)
                 .frame(width: 72)
 
             VStack(alignment: .leading) {
@@ -22,9 +22,11 @@ struct MovieListItem: View {
                 if let releaseDate = movie.releaseDateDate {
                     Text(releaseDate, format: .dateTime.year())
                         .font(.subheadline)
+                        .foregroundStyle(Color(.systemGray))
                 } else {
                     Text(movie.releaseDate)
                         .font(.subheadline)
+                        .foregroundStyle(Color(.systemGray))
                 }
             }
         }

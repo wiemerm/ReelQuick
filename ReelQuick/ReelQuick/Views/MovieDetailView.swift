@@ -13,16 +13,15 @@ struct MovieDetailView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(alignment: .top) {
-                // TODO: Accessibility label
-                PosterImage(url: movie.posterImageURL)
+                PosterImage(url: movie.posterImageURL, movieTitle: movie.title)
 
                 VStack(alignment: .leading) {
                     Text(movie.title)
                         .font(.headline)
 
-                    // TODO: Formatting of date
-                    Text(movie.releaseDate)
+                    Text(movie.releaseDateDate?.formatted(date: .long, time: .omitted) ?? movie.releaseDate)
                         .font(.subheadline)
+                        .foregroundStyle(Color(.systemGray))
 
                     Spacer()
 
@@ -41,6 +40,7 @@ struct MovieDetailView: View {
             Text("OVERVIEW")
                 .font(.headline)
                 .padding(.top, 12)
+                .foregroundStyle(Color(.systemGray))
 
             Text(movie.overview)
 
