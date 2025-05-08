@@ -21,6 +21,13 @@ struct MovieSearchView: View {
         VStack {
             List(movies) {
                 MovieListItem(movie: $0)
+                    .overlay {
+                        NavigationLink {
+                            MovieDetailView()
+                        } label: {
+                            EmptyView()
+                        }.opacity(0)
+                    }
             }
             .listStyle(.plain)
         }

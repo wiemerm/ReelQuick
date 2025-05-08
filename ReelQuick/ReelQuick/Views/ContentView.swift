@@ -9,11 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationSplitView {
+        NavigationStack {
             MovieSearchView()
-                
-        } detail: {
-            MovieDetailView()
         }
     }
 }
