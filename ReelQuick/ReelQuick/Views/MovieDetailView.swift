@@ -13,7 +13,9 @@ struct MovieDetailView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(alignment: .top) {
-                PosterImage(url: movie.posterImageURL, movieTitle: movie.title)
+                PosterImage(url: movie.posterImageURL)
+                    .accessibilityLabel("Movie poster for \(movie.title)")
+                    .accessibilityHidden(false)
                     .frame(maxHeight: 132)
 
                 VStack(alignment: .leading) {
@@ -34,6 +36,7 @@ struct MovieDetailView: View {
                         .font(.headline)
 
                     ProgressView(value: movie.voteAverage, total: 10)
+                        .accessibilityHidden(true)
                 }
             }
             .frame(idealHeight: 120)

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct PosterImage: View {
     let url: URL?
-    let movieTitle: String
 
     var body: some View {
         if let url {
@@ -17,7 +16,6 @@ struct PosterImage: View {
                 image
                     .resizable()
                     .aspectRatio(2/3, contentMode: .fit)
-                    .accessibilityLabel("Movie poster for \(movieTitle)")
 
             } placeholder: {
                 ProgressView()
@@ -31,7 +29,7 @@ struct PosterImage: View {
 
 #if DEBUG
 #Preview {
-    PosterImage(url: Movie.mock().posterImageURL, movieTitle: "Forward Unto Dawn")
+    PosterImage(url: Movie.mock().posterImageURL)
         .padding()
 }
 #endif

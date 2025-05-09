@@ -12,7 +12,9 @@ struct MovieListItem: View {
 
     var body: some View {
         HStack(alignment: .top) {
-            PosterImage(url: movie.posterImageURL, movieTitle: movie.title)
+            PosterImage(url: movie.posterImageURL)
+                .accessibilityLabel("Movie poster for \(movie.title)")
+                .accessibilityHidden(false)
                 .frame(width: 72)
 
             VStack(alignment: .leading) {
@@ -30,6 +32,7 @@ struct MovieListItem: View {
                 }
             }
         }
+        .accessibilityElement(children: .contain)
     }
 }
 
