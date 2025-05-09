@@ -31,4 +31,29 @@ final class MovieServiceTests: XCTestCase {
             XCTAssertEqual(mockAPIClient.fetchCallCount, 1)
         }
     }
+
+    func test_searchMovies_callsThroughToAPIClient_onSuccess() async throws {
+        let query = "query".appendRandom()
+
+        let expectedMovies = [
+            Movie.mock(),
+            Movie.mock(),
+            Movie.mock()
+        ]
+
+        mockAPIClient.movieResultToReturn = MovieResult(
+            page: 1,
+            totalPages: 1,
+            totalResults: 3,
+            results: expectedMovies
+        )
+
+        do {
+            let result = try await movieService.searchMovies(query)
+            XCTAssertFalse(result.isEmpty)
+            XCTAssertEqual(result, expectedMovies)
+        } catch {
+            XCTFail("Expected the search movies to not fail")
+        }
+    }
 }

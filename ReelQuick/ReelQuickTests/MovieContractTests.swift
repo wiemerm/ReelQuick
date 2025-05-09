@@ -14,7 +14,7 @@ final class MovieContractTests: XCTestCase {
         let endpoint = MovieEndpoint.search(query: "Lego")
 
         do {
-            let movieResults: MovieSearchResults = try await client.fetch(endpoint)
+            let movieResults: MovieResult = try await client.fetch(endpoint)
 
             XCTAssertFalse(movieResults.results.isEmpty)
         } catch {

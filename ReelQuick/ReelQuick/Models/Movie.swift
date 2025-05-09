@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Movie: Codable, Identifiable {
+struct Movie: Codable, Identifiable, Equatable {
     let id: Int
     let title: String
     let overview: String
@@ -24,7 +24,7 @@ struct Movie: Codable, Identifiable {
     }
 }
 
-struct MovieSearchResults: Codable {
+struct MovieResult: Codable {
     let page: Int
     let totalPages: Int
     let totalResults: Int

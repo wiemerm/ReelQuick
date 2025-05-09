@@ -19,7 +19,7 @@ struct MovieService: MovieServiceProtocol {
     }
 
     func searchMovies(_ query: String) async throws -> [Movie] {
-        let moviesResult: MovieSearchResults = try await apiClient.fetch(MovieEndpoint.search(query: query))
+        let moviesResult: MovieResult = try await apiClient.fetch(MovieEndpoint.search(query: query))
         return moviesResult.results
     }
 }
