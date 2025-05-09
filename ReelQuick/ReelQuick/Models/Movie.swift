@@ -12,11 +12,12 @@ struct Movie: Codable, Identifiable, Equatable {
     let title: String
     let overview: String
     let releaseDate: String
-    let posterPath: String
+    let posterPath: String?
     let voteAverage: Double
 
     var posterImageURL: URL? {
-        URL(string: "https://image.tmdb.org/t/p/original\(posterPath)")
+        guard let posterPath else { return nil }
+        return URL(string: "https://image.tmdb.org/t/p/original\(posterPath)")
     }
 
     var releaseDateDate: Date? {

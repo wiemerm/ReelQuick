@@ -1,0 +1,247 @@
+{
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/Al127H6f1RXpESdg0MGNL2g8mzO.jpg",
+        "genre_ids": [
+          16,
+          35,
+          878
+        ],
+        "id": 1359227,
+        "original_language": "en",
+        "original_title": "LEGO Marvel Avengers: Mission Demolition",
+        "overview": "A young, aspiring hero and superhero fan inadvertently unleashes a powerful new villain looking to rid the world of the Avengers.",
+        "popularity": 4.4205,
+        "poster_path": "/4KfgyzCgJeG0XJDbqNztdP730Pv.jpg",
+        "release_date": "2024-10-17",
+        "title": "LEGO Marvel Avengers: Mission Demolition",
+        "video": false,
+        "vote_average": 6.8,
+        "vote_count": 95
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/AgL1aKZcvzG0XCXosFQaBgibaac.jpg",
+        "genre_ids": [
+          16
+        ],
+        "id": 891657,
+        "original_language": "en",
+        "original_title": "LEGO® Hidden Side: Night of the Harbinger",
+        "overview": "Jack and Parker work to seal a Hidden Side hole when a fire ghost escapes covered in a strange silvery substance and reveals that their world may be doomed.",
+        "popularity": 0.6018,
+        "poster_path": "/yoDchepiE9Tcv36ivkzOF4z75ws.jpg",
+        "release_date": "2020-10-31",
+        "title": "LEGO Hidden Side: Night of the Harbinger",
+        "video": false,
+        "vote_average": 6.1,
+        "vote_count": 19
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oAiqaBzPB3wsfvplA4PHpaNpB9n.jpg",
+        "genre_ids": [
+          99,
+          10751
+        ],
+        "id": 251471,
+        "original_language": "en",
+        "original_title": "Beyond the Brick: A LEGO® Brickumentary",
+        "overview": "A look at the global culture and appeal of the LEGO building-block toys.",
+        "popularity": 0.5278,
+        "poster_path": "/ojBg3yJfsqzi1maypHV7sW7COcn.jpg",
+        "release_date": "2014-11-09",
+        "title": "A LEGO Brickumentary",
+        "video": false,
+        "vote_average": 5.9,
+        "vote_count": 136
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oFSQEG1lJTTISj3QKB7cJ9ANkFw.jpg",
+        "genre_ids": [
+          16,
+          28,
+          10751
+        ],
+        "id": 1154598,
+        "original_language": "en",
+        "original_title": "LEGO Marvel Avengers: Code Red",
+        "overview": "The Avengers gather to celebrate their latest victory, but their celebration is quickly interrupted by the mysterious disappearance of Black Widow's father, Red Guardian. As the Avengers investigate, they discover that Red Guardian isn't the only one missing when they meet a dangerous new foe quite unlike anything they've ever encountered before.",
+        "popularity": 2.1272,
+        "poster_path": "/rDzig50dj7VpLwJ7SThbamETK1G.jpg",
+        "release_date": "2023-10-26",
+        "title": "LEGO Marvel Avengers: Code Red",
+        "video": false,
+        "vote_average": 6.552,
+        "vote_count": 126
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/f53Jujiap580mgfefID0T0g2e17.jpg",
+        "genre_ids": [
+          16,
+          10751,
+          878,
+          35,
+          10770
+        ],
+        "id": 857702,
+        "original_language": "en",
+        "original_title": "LEGO Star Wars Terrifying Tales",
+        "overview": "Poe Dameron and BB-8 must face the greedy crime boss Graballa the Hutt, who has purchased Darth Vader’s castle and is renovating it into the galaxy’s first all-inclusive Sith-inspired luxury hotel.",
+        "popularity": 2.0709,
+        "poster_path": "/fYiaBZDjyXjvlY6EDZMAxIhBO1I.jpg",
+        "release_date": "2021-10-01",
+        "title": "LEGO Star Wars Terrifying Tales",
+        "video": false,
+        "vote_average": 6.864,
+        "vote_count": 254
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ucEQXe6wPpPhgcJh4oXOAvX1lnb.jpg",
+        "genre_ids": [
+          16,
+          10751,
+          878,
+          12,
+          35
+        ],
+        "id": 732670,
+        "original_language": "en",
+        "original_title": "LEGO Star Wars Holiday Special",
+        "overview": "As her friends prep for a Life Day holiday celebration, Rey journeys with BB-8 on a quest to gain a deeper knowledge of the Force at a mysterious Jedi Temple. There, she embarks on a cross-timeline adventure through beloved moments in Star Wars history, coming into contact with iconic heroes and villains from all eras of the saga. But will she make it back in time for the Life Day feast?",
+        "popularity": 1.5574,
+        "poster_path": "/zyzJSI7UZZzz5Toj10rYGF5689z.jpg",
+        "release_date": "2020-11-17",
+        "title": "LEGO Star Wars Holiday Special",
+        "video": false,
+        "vote_average": 6.6,
+        "vote_count": 338
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/9531Jp42H0ppRXjkxxgCulnQNZp.jpg",
+        "genre_ids": [
+          16,
+          10751,
+          12,
+          35,
+          14
+        ],
+        "id": 137106,
+        "original_language": "en",
+        "original_title": "The Lego Movie",
+        "overview": "An ordinary Lego mini-figure, mistakenly thought to be the extraordinary MasterBuilder, is recruited to join a quest to stop an evil Lego tyrant from conquering the universe.",
+        "popularity": 8.0656,
+        "poster_path": "/lbctonEnewCYZ4FYoTZhs8cidAl.jpg",
+        "release_date": "2014-02-06",
+        "title": "The Lego Movie",
+        "video": false,
+        "vote_average": 7.415,
+        "vote_count": 7995
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/mo1eLCJTp5JGGz2tKlW98KXpRo0.jpg",
+        "genre_ids": [
+          16,
+          28,
+          35,
+          10751
+        ],
+        "id": 324849,
+        "original_language": "en",
+        "original_title": "The Lego Batman Movie",
+        "overview": "A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick.",
+        "popularity": 8.2708,
+        "poster_path": "/snGwr2gag4Fcgx2OGmH9otl6ofW.jpg",
+        "release_date": "2017-02-08",
+        "title": "The Lego Batman Movie",
+        "video": false,
+        "vote_average": 7.2,
+        "vote_count": 5107
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/aM1dP91YFVPsgq1WG8vMwip9zLe.jpg",
+        "genre_ids": [
+          10751,
+          16,
+          878
+        ],
+        "id": 136406,
+        "original_language": "en",
+        "original_title": "LEGO Star Wars: The Empire Strikes Out",
+        "overview": "Luke Skywalker embarks on a mission to destroy an Imperial base, but is relentlessly chased by a group of fanatic girls who think of him as a celebrity. Meanwhile, Darth Vader engages a rivalry with Darth Maul, in order to prove that he's the best Sith Lord.",
+        "popularity": 1.0749,
+        "poster_path": "/doeFDzZ0Ywp8YUoRaEhVE5UBqka.jpg",
+        "release_date": "2012-09-24",
+        "title": "LEGO Star Wars: The Empire Strikes Out",
+        "video": false,
+        "vote_average": 6.355,
+        "vote_count": 100
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hVl0qfLZ5loznDgQ0HxCTZqvZhz.jpg",
+        "genre_ids": [
+          10751,
+          16,
+          878
+        ],
+        "id": 70608,
+        "original_language": "en",
+        "original_title": "LEGO Star Wars: The Padawan Menace",
+        "overview": "Master Yoda must go retrieve secret battle plans. However, things become a little more complicated when a class of younglings join the mission.",
+        "popularity": 1.0606,
+        "poster_path": "/bCDa9memHnETeRrJWXzImTZdMal.jpg",
+        "release_date": "2011-07-22",
+        "title": "LEGO Star Wars: The Padawan Menace",
+        "video": false,
+        "vote_average": 6.503,
+        "vote_count": 146
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/cqk74oXNWt0proTMZv68Y5ULgNa.jpg",
+        "genre_ids": [
+          16,
+          35,
+          28
+        ],
+        "id": 417321,
+        "original_language": "en",
+        "original_title": "The Master: A LEGO Ninjago Short",
+        "overview": "Master Wu gets into a conflict with Chicken.",
+        "popularity": 0.3801,
+        "poster_path": null,
+        "release_date": "2016-09-22",
+        "title": "The Master: A LEGO Ninjago Short",
+        "video": false,
+        "vote_average": 6.567,
+        "vote_count": 30
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [],
+        "id": 687218,
+        "original_language": "en",
+        "original_title": "Lego",
+        "overview": "When a couple enters the mysterious house of the woman’s childhood, she mysteriously disappears. In searching for her, the man finds a baby wearing his wife’s necklace. He becomes convinced that the baby is his wife and she has repeated this loop countless times.",
+        "popularity": 0.1254,
+        "poster_path": "/uLjMIPu7XiMdrFfxhhAzgcdqFXE.jpg",
+        "release_date": "",
+        "title": "Lego",
+        "video": false,
+        "vote_average": 6.4,
+        "vote_count": 15
+      }
+    ],
+    "total_pages": 10,
+    "total_results": 196
+  }
