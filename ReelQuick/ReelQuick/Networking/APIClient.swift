@@ -19,11 +19,11 @@ struct APIClient: APISendable {
             throw APIError.invalidURL
         }
 
-        let (data, _) = try await URLSession.shared.data(for: request)
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-
         do {
+            let (data, _) = try await URLSession.shared.data(for: request)
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+
             return try decoder.decode(T.self, from: data)
         } catch {
             throw APIError.decodingFailed

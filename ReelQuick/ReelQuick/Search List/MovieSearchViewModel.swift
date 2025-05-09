@@ -10,7 +10,7 @@ import SwiftUI
 
 class MovieSearchViewModel: ObservableObject {
     @Published var movies = [Movie]()
-    @Published var error: APIError?
+    @Published var error: String?
     @Published var searchText: String = ""
 
     private var cancellables = Set<AnyCancellable>()
@@ -39,11 +39,11 @@ class MovieSearchViewModel: ObservableObject {
     }
 
     private func search(for text: String) {
-        Task {
+        Task { @MainActor in
             do {
                 movies = try await movieService.searchMovies(text)
             } catch {
-                self.error = error as? APIError
+                self.error = (error as? APIError ?? .caught(error)).userFriendlyDescription
             }
         }
     }

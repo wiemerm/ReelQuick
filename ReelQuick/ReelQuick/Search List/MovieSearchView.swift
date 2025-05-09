@@ -36,6 +36,7 @@ struct MovieSearchView: View {
         .searchPresentationToolbarBehavior(.avoidHidingContent)
         .navigationTitle(Text("Movie Search"))
         .navigationBarTitleDisplayMode(.large)
+        .errorAlert(message: $viewModel.error)
     }
 }
 

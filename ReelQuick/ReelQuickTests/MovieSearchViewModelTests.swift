@@ -84,7 +84,7 @@ final class MovieSearchViewModelTests: XCTestCase {
         viewModel.$error
             .dropFirst()
             .sink { error in
-                XCTAssertEqual(error?.userFriendlyDescription, expected.userFriendlyDescription)
+                XCTAssertEqual(error, expected.userFriendlyDescription)
                 expect.fulfill()
             }
             .store(in: &cancellables)
