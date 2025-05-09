@@ -8,18 +8,11 @@
 import SwiftUI
 
 struct MovieSearchView: View {
-    // Temp for setting up view
-    let movies = [
-        Movie.mock(),
-        Movie.mock(),
-        Movie.mock(),
-        Movie.mock(),
-        Movie.mock()
-    ]
+    @StateObject var viewModel = MovieSearchViewModel()
 
     var body: some View {
         VStack {
-            List(movies) { movie in
+            List(viewModel.movies) { movie in
                 MovieListItem(movie: movie)
                     .overlay {
                         NavigationLink {
@@ -32,11 +25,11 @@ struct MovieSearchView: View {
             .listStyle(.plain)
         }
         .overlay {
-            if movies.isEmpty {
+            if viewModel.movies.isEmpty {
                 ContentUnavailableView.init("", image: "", description: Text("No Results"))
             }
         }
-        .searchable(text: .constant(""))
+        .searchable(text: $viewModel.searchText)
         .onAppear {
             UISearchBar.appearance().showsCancelButton = false
         }

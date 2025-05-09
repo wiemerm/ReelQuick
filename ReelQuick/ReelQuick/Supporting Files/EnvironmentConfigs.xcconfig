@@ -1,0 +1,11 @@
+//
+//  EnvironmentConfigs.xcconfig
+//  ReelQuick
+//
+//  Created by Megan Wiemer on 5/9/25.
+//
+
+// In a real world scenario this file would be
+// ignored to keep keys out of the repo
+API_KEY = b11fc621b3f7f739cb79b50319915f1d
+BASE_URL = api.themoviedb.org

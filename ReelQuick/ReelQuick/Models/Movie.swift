@@ -7,8 +7,6 @@
 
 import Foundation
 
-// Note to self:
-// Use .keyDecodingStrategy = .convertFromSnakeCase
 struct Movie: Codable, Identifiable {
     let id: String
     let title: String

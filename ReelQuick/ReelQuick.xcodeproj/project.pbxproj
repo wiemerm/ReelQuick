@@ -29,9 +29,22 @@
 		639A19912DCD1D7000366CC4 /* ReelQuickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReelQuickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		634506322DCE838F00CC4A7C /* Exceptions for "ReelQuick" folder in "ReelQuick" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 639A19762DCD1D6F00366CC4 /* ReelQuick */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		639A19792DCD1D6F00366CC4 /* ReelQuick */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				634506322DCE838F00CC4A7C /* Exceptions for "ReelQuick" folder in "ReelQuick" target */,
+			);
 			path = ReelQuick;
 			sourceTree = "<group>";
 		};
@@ -425,6 +438,7 @@
 				DEVELOPMENT_TEAM = 2KLV3F3TB7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReelQuick/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +468,7 @@
 				DEVELOPMENT_TEAM = 2KLV3F3TB7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReelQuick/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
