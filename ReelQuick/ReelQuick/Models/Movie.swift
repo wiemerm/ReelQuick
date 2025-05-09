@@ -8,7 +8,7 @@
 import Foundation
 
 struct Movie: Codable, Identifiable {
-    let id: String
+    let id: Int
     let title: String
     let overview: String
     let releaseDate: String
@@ -34,7 +34,7 @@ struct MovieSearchResults: Codable {
 #if DEBUG
 extension Movie {
     static func mock(
-        id: String = UUID().uuidString,
+        id: Int = UUID().hashValue,
         title: String = "Halo 4: Forward Unto Dawn",
         // swiftlint:disable:next line_length
         overview: String = "UNSC Cadet Thomas Lasky must conquer his inner fears and join forces with super-soldier John-117 to take down a massive faction of the Covenant.",

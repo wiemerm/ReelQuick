@@ -19,7 +19,7 @@ final class MovieEndpointTests: XCTestCase {
         XCTAssertNotNil(request)
         XCTAssertEqual(
             request?.url?.absoluteString,
-            "https://\(baseUrl)/3/search/search-movies?api_key=\(apiKey)&query=\(query)"
+            "https://\(baseUrl)/3/search/movie?api_key=\(apiKey)&query=\(query)"
         )
     }
 }

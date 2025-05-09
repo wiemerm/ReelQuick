@@ -12,7 +12,7 @@ enum MovieEndpoint: Endpoint {
 
     var path: String {
         switch self {
-        case .search: return "/3/search/search-movies"
+        case .search: return "/3/search/movie"
         }
     }
 

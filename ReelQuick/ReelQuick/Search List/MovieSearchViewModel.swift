@@ -29,7 +29,7 @@ class MovieSearchViewModel: ObservableObject {
 
         $searchText
             .filter { $0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
-            .sink { [weak self] text in
+            .sink { [weak self] _ in
                 self?.movies = []
             }
             .store(in: &cancellables)

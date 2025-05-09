@@ -14,19 +14,11 @@
 			remoteGlobalIDString = 639A19762DCD1D6F00366CC4;
 			remoteInfo = ReelQuick;
 		};
-		639A19922DCD1D7000366CC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 639A196F2DCD1D6F00366CC4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 639A19762DCD1D6F00366CC4;
-			remoteInfo = ReelQuick;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		639A19772DCD1D6F00366CC4 /* ReelQuick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReelQuick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639A19872DCD1D7000366CC4 /* ReelQuickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReelQuickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		639A19912DCD1D7000366CC4 /* ReelQuickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReelQuickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -75,13 +67,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		639A198E2DCD1D7000366CC4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -100,7 +85,6 @@
 			children = (
 				639A19772DCD1D6F00366CC4 /* ReelQuick.app */,
 				639A19872DCD1D7000366CC4 /* ReelQuickTests.xctest */,
-				639A19912DCD1D7000366CC4 /* ReelQuickUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,29 +138,6 @@
 			productReference = 639A19872DCD1D7000366CC4 /* ReelQuickTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		639A19902DCD1D7000366CC4 /* ReelQuickUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 639A19A12DCD1D7000366CC4 /* Build configuration list for PBXNativeTarget "ReelQuickUITests" */;
-			buildPhases = (
-				639A198D2DCD1D7000366CC4 /* Sources */,
-				639A198E2DCD1D7000366CC4 /* Frameworks */,
-				639A198F2DCD1D7000366CC4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				639A19932DCD1D7000366CC4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				639A19942DCD1D7000366CC4 /* ReelQuickUITests */,
-			);
-			name = ReelQuickUITests;
-			packageProductDependencies = (
-			);
-			productName = ReelQuickUITests;
-			productReference = 639A19912DCD1D7000366CC4 /* ReelQuickUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,10 +152,6 @@
 						CreatedOnToolsVersion = 16.2;
 					};
 					639A19862DCD1D7000366CC4 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 639A19762DCD1D6F00366CC4;
-					};
-					639A19902DCD1D7000366CC4 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 639A19762DCD1D6F00366CC4;
 					};
@@ -219,7 +176,6 @@
 			targets = (
 				639A19762DCD1D6F00366CC4 /* ReelQuick */,
 				639A19862DCD1D7000366CC4 /* ReelQuickTests */,
-				639A19902DCD1D7000366CC4 /* ReelQuickUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,13 +189,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		639A19852DCD1D7000366CC4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		639A198F2DCD1D7000366CC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,13 +234,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		639A198D2DCD1D7000366CC4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -300,16 +242,13 @@
 			target = 639A19762DCD1D6F00366CC4 /* ReelQuick */;
 			targetProxy = 639A19882DCD1D7000366CC4 /* PBXContainerItemProxy */;
 		};
-		639A19932DCD1D7000366CC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 639A19762DCD1D6F00366CC4 /* ReelQuick */;
-			targetProxy = 639A19922DCD1D7000366CC4 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		639A19992DCD1D7000366CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 639A19792DCD1D6F00366CC4 /* ReelQuick */;
+			baseConfigurationReferenceRelativePath = "Supporting Files/EnvironmentConfigs.xcconfig";
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -373,6 +312,8 @@
 		};
 		639A199A2DCD1D7000366CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 639A19792DCD1D6F00366CC4 /* ReelQuick */;
+			baseConfigurationReferenceRelativePath = "Supporting Files/EnvironmentConfigs.xcconfig";
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -525,40 +466,6 @@
 			};
 			name = Release;
 		};
-		639A19A22DCD1D7000366CC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2KLV3F3TB7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.meganwiemer.ReelQuickUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ReelQuick;
-			};
-			name = Debug;
-		};
-		639A19A32DCD1D7000366CC4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2KLV3F3TB7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.meganwiemer.ReelQuickUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ReelQuick;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,15 +492,6 @@
 			buildConfigurations = (
 				639A199F2DCD1D7000366CC4 /* Debug */,
 				639A19A02DCD1D7000366CC4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		639A19A12DCD1D7000366CC4 /* Build configuration list for PBXNativeTarget "ReelQuickUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				639A19A22DCD1D7000366CC4 /* Debug */,
-				639A19A32DCD1D7000366CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
