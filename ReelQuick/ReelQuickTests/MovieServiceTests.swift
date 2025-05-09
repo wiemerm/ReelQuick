@@ -27,7 +27,7 @@ final class MovieServiceTests: XCTestCase {
             _ = try await movieService.searchMovies(query)
             XCTFail("Expected the search movies to fail")
         } catch {
-            XCTAssertEqual(error as? APIError, expectedError)
+            XCTAssertEqual((error as? APIError)?.userFriendlyDescription, expectedError.userFriendlyDescription)
             XCTAssertEqual(mockAPIClient.fetchCallCount, 1)
         }
     }

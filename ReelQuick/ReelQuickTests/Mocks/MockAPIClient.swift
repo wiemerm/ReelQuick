@@ -23,6 +23,6 @@ class MockAPIClient: APISendable {
             throw errorToThrow
         }
 
-        throw APIError.unknown
+        throw APIError.invalidURL
     }
 }

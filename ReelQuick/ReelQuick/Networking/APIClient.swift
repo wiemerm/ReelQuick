@@ -34,5 +34,14 @@ struct APIClient: APISendable {
 enum APIError: Error {
     case invalidURL
     case decodingFailed
-    case unknown
+    case caught(Error)
+
+    var userFriendlyDescription: String {
+        switch self {
+        case .invalidURL, .caught:
+            "Something went wrong while creating your search reqeuest. Please try again later."
+        case .decodingFailed:
+            "We ran into a problem processing the response. Please try again later."
+        }
+    }
 }

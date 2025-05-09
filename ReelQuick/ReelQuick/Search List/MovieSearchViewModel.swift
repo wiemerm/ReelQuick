@@ -10,11 +10,14 @@ import SwiftUI
 
 class MovieSearchViewModel: ObservableObject {
     @Published var movies = [Movie]()
+    @Published var error: APIError?
     @Published var searchText: String = ""
 
     private var cancellables = Set<AnyCancellable>()
+    private let movieService: MovieServiceProtocol
 
-    init() {
+    init(movieService: MovieServiceProtocol = MovieService()) {
+        self.movieService = movieService
         setUpObservers()
     }
 
@@ -23,7 +26,7 @@ class MovieSearchViewModel: ObservableObject {
             .filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
             .debounce(for: 0.5, scheduler: RunLoop.main)
             .sink { [weak self] text in
-                // Search for the entered text
+                self?.search(for: text)
             }
             .store(in: &cancellables)
 
@@ -33,5 +36,15 @@ class MovieSearchViewModel: ObservableObject {
                 self?.movies = []
             }
             .store(in: &cancellables)
+    }
+
+    private func search(for text: String) {
+        Task {
+            do {
+                movies = try await movieService.searchMovies(text)
+            } catch {
+                self.error = error as? APIError
+            }
+        }
     }
 }
