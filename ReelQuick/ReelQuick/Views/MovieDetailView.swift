@@ -14,6 +14,7 @@ struct MovieDetailView: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(alignment: .top) {
                 PosterImage(url: movie.posterImageURL, movieTitle: movie.title)
+                    .frame(maxHeight: 120)
 
                 VStack(alignment: .leading) {
                     Text(movie.title)
@@ -24,6 +25,7 @@ struct MovieDetailView: View {
                         .foregroundStyle(Color(.systemGray))
 
                     Spacer()
+                        .frame(height: 24)
 
                     Text("Viewer Rating")
                         .font(.subheadline)
@@ -34,8 +36,6 @@ struct MovieDetailView: View {
                     ProgressView(value: movie.voteAverage, total: 10)
                 }
             }
-            // TODO: Factor in accessibility for dynamic text
-            .frame(height: 120)
 
             Text("OVERVIEW")
                 .font(.headline)
