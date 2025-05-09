@@ -14,6 +14,7 @@ struct MovieDetailView: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(alignment: .top) {
                 PosterImage(url: movie.posterImageURL, movieTitle: movie.title)
+                    .frame(maxHeight: 132)
 
                 VStack(alignment: .leading) {
                     Text(movie.title)
@@ -24,6 +25,7 @@ struct MovieDetailView: View {
                         .foregroundStyle(Color(.systemGray))
 
                     Spacer()
+                        .frame(maxHeight: 36)
 
                     Text("Viewer Rating")
                         .font(.subheadline)
@@ -34,7 +36,7 @@ struct MovieDetailView: View {
                     ProgressView(value: movie.voteAverage, total: 10)
                 }
             }
-            .frame(maxHeight: 120)
+            .frame(idealHeight: 120)
 
             Text("OVERVIEW")
                 .font(.headline)
