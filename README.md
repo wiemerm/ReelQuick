@@ -17,7 +17,15 @@ This mini project showcases modern iOS development using:
 
 ## Build and Functionality Walkthrough
 
-## Coding Session
+## Coding Sessions
+Videos were too large to include directly in GitHub so they are unlisted on YT at the following links
+
+[UI Layout Coding Session](https://youtu.be/mi_cZ-uCKe4)
+
+[Networking Code Session](https://youtu.be/mi_cZ-uCKe4)
+
+
+
 
 ## Initial Board
 ![Screenshot 2025-05-09 174817](https://github.com/user-attachments/assets/7f0bb8ca-ff7d-4612-9aa2-91fe5ea277a3)
