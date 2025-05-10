@@ -17,6 +17,9 @@ This mini project showcases modern iOS development using:
 
 ## Build and Functionality Walkthrough
 
+https://github.com/user-attachments/assets/eaf90423-b111-4d06-b3b8-ce89c82eeed0
+
+
 ## Coding Sessions
 Videos were too large to include directly in GitHub so they are unlisted on YT at the following links
 
