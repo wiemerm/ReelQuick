@@ -17,10 +17,12 @@ final class MovieEndpointTests: XCTestCase {
         let apiKey = EnvironmentVariables.apiKey ?? ""
 
         XCTAssertNotNil(request)
+        // swiftlint:disable line_length
         XCTAssertEqual(
             request?.url?.absoluteString,
-            "https://\(baseUrl)/3/search/movie?api_key=\(apiKey)&query=\(query)"
+            "https://\(baseUrl)/3/search/movie?api_key=\(apiKey)&language=en-US&page=1&includeadult=false&query=\(query)"
         )
+        // swiftlint:enable line_length
     }
 }
 

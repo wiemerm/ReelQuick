@@ -17,7 +17,12 @@ enum MovieEndpoint: Endpoint {
     }
 
     var queryItems: [URLQueryItem] {
-        var items = [URLQueryItem(name: "api_key", value: EnvironmentVariables.apiKey)]
+        var items = [
+            URLQueryItem(name: "api_key", value: EnvironmentVariables.apiKey),
+            URLQueryItem(name: "language", value: "en-US"),
+            URLQueryItem(name: "page", value: "1"),
+            URLQueryItem(name: "includeadult", value: "false")
+        ]
 
         switch self {
         case .search(let query):
