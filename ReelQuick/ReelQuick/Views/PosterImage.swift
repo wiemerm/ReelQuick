@@ -21,7 +21,7 @@ struct PosterImage: View {
                 ProgressView()
             }
         } else {
-            Color(.systemGray6)
+            Color.systemGray6
                 .aspectRatio(2/3, contentMode: .fit)
         }
     }

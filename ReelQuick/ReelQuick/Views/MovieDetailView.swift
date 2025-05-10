@@ -11,12 +11,12 @@ struct MovieDetailView: View {
     let movie: Movie
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: Constants.Spacing.medium) {
             HStack(alignment: .top) {
                 PosterImage(url: movie.posterImageURL)
                     .accessibilityLabel("Movie poster for \(movie.title)")
                     .accessibilityHidden(false)
-                    .frame(maxHeight: 132)
+                    .frame(maxHeight: Constants.ImageSize.height)
 
                 VStack(alignment: .leading) {
                     Text(movie.title)
@@ -24,10 +24,10 @@ struct MovieDetailView: View {
 
                     Text(movie.releaseDateDate?.formatted(date: .long, time: .omitted) ?? movie.releaseDate)
                         .font(.subheadline)
-                        .foregroundStyle(Color(.systemGray))
+                        .foregroundStyle(Color.systemGray)
 
                     Spacer()
-                        .frame(maxHeight: 36)
+                        .frame(minHeight: 0, maxHeight: 36)
 
                     Text("Viewer Rating")
                         .font(.subheadline)
@@ -39,12 +39,11 @@ struct MovieDetailView: View {
                         .accessibilityHidden(true)
                 }
             }
-            .frame(idealHeight: 120)
 
             Text("OVERVIEW")
                 .font(.headline)
-                .padding(.top, 12)
-                .foregroundStyle(Color(.systemGray))
+                .padding(.top, Constants.Spacing.medium)
+                .foregroundStyle(Color.systemGray)
 
             Text(movie.overview)
 

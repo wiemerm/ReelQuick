@@ -15,7 +15,7 @@ struct MovieListItem: View {
             PosterImage(url: movie.posterImageURL)
                 .accessibilityLabel("Movie poster for \(movie.title)")
                 .accessibilityHidden(false)
-                .frame(width: 72)
+                .frame(maxHeight: Constants.ImageSize.height)
 
             VStack(alignment: .leading) {
                 Text(movie.title)
@@ -24,11 +24,11 @@ struct MovieListItem: View {
                 if let releaseDate = movie.releaseDateDate {
                     Text(releaseDate, format: .dateTime.year())
                         .font(.subheadline)
-                        .foregroundStyle(Color(.systemGray))
+                        .foregroundStyle(Color.systemGray)
                 } else {
                     Text(movie.releaseDate)
                         .font(.subheadline)
-                        .foregroundStyle(Color(.systemGray))
+                        .foregroundStyle(Color.systemGray)
                 }
             }
         }
