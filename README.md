@@ -25,7 +25,7 @@ Videos were too large to include directly in GitHub so they are unlisted on YT a
 
 [UI Layout Coding Session](https://youtu.be/mi_cZ-uCKe4)
 
-[Networking Code Session](https://youtu.be/mi_cZ-uCKe4)
+[Networking Code Session](https://youtu.be/Dg1j3YIL0pY)
 
 
 
